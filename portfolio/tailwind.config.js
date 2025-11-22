@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
-        primary: '#0f172a', // Slate 900
-        secondary: '#334155', // Slate 700
-        accent: '#3b82f6', // Blue 500
+        background: '#000000',
+        surface: '#101010', // Dark zinc/off-black
+        primary: '#ffffff', // White text
+        secondary: '#9ca3af', // Gray-400
       }
     },
   },

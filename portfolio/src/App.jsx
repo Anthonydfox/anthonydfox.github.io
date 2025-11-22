@@ -8,9 +8,9 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="bg-black min-h-screen text-gray-400 selection:bg-white/20 selection:text-white">
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <About />
         <Experience />
         <Leadership />
