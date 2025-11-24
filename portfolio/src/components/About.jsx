@@ -5,21 +5,16 @@ import { Github, Linkedin, MapPin } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center pt-20 pb-10">
-      <div className="max-w-4xl mx-auto px-4 text-center">
+    <section id="about" className="py-20">
+      <div className="max-w-4xl mx-auto px-4">
+
+        {/* Social / Location Links - Keeping them here as a secondary info block */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center items-center gap-6 mb-16 text-gray-400"
         >
-          <h1 className="text-5xl sm:text-7xl font-bold mb-6 tracking-tight text-white">
-            {PROFILE.name}
-          </h1>
-          <h2 className="text-xl sm:text-3xl text-gray-400 mb-8 font-light tracking-tight">
-            {PROFILE.title}
-          </h2>
-
-          <div className="flex flex-wrap justify-center items-center gap-6 mb-16 text-gray-400">
             <div className="flex items-center gap-2">
               <MapPin size={18} />
               <span>{PROFILE.location}</span>
@@ -42,13 +37,13 @@ const About = () => {
               <Linkedin size={18} />
               <span>LinkedIn</span>
             </a>
-          </div>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
           className="glass-card p-8 rounded-3xl text-left max-w-3xl mx-auto"
         >
           <h3 className="text-2xl font-semibold mb-8 text-white tracking-tight">Education</h3>

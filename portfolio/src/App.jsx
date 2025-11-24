@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Leadership from './components/Leadership';
@@ -11,6 +12,7 @@ function App() {
     <div className="bg-black min-h-screen text-gray-400 selection:bg-white/20 selection:text-white">
       <Navbar />
       <main className="relative z-10">
+        <Hero />
         <About />
         <Experience />
         <Leadership />
